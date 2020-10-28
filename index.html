@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   </head>
   <body>
-    <navbar class="navbar w-75 mx-auto">
+    <navbar class="navbar w-100 mx-auto border-bottom">
       <a href="#" class="navbar-brand ">Instagram Clone</a>
       <form action="form-inline" class="mx-auto">
-        <input type="form-control" type="search" placeholder="Search">
+        <input type="form-control" type="search" placeholder="Search" class="rounded">
       </form>
       <button type="button" class="btn btn-primary ml-auto">Home</button>
       <button type="button" class="btn btn-secondary">Messages</button>
@@ -17,12 +17,12 @@
       <button type="button" class="btn btn-secondary">Notifications</button>
       <button type="button" class="btn btn-secondary">Profile</button>
     </navbar>
-    <div class="container w-75  h-100">
+    <div class="container w-75  h-100 mt-4">
       <div class="row">
         <!-- left container -->
         <div class="container w-75 h-75 col">
           <!-- Insta stories container -->
-          <div class="container border" style="width: 95%;">
+          <div class="container border rounded" style="width: 95%;">
             <div class="row">
               <figure class="m-0 p-0 col">
                 <img src="https://www.shareicon.net/data/256x256/2017/05/30/886556_user_512x512.png" class="img-fluid" style="">
@@ -71,16 +71,16 @@
                 </div>
                 <!-- Likes/User desciption, comments -->
                 <div class="container w-auto h-auto ml-0">
-                  <p>Liked by user and 75,404 others</p>
+                  <p>Liked by <strong>user_account</strong> and <strong>75,404 others</strong></p>
                   <div class="row">
-                    <strong class="col"><p>user account</p></strong><p class="col">description</p>
+                    <strong class="col"><p>user account</p></strong><p class="col-8">description</p>
                   </div>
                   <p>View all 1,403 comments</p>
                   <div class="row">
-                    <strong class="col"><p>user2</p></strong><p class="col">awesome!</p>
+                    <strong class="col"><p>user2</p></strong><p class="col-10">awesome!</p>
                   </div>
                   <div class="row">
-                    <strong class="col"><p>user3</p></strong><p class="col">fire!</p>
+                    <strong class="col"><p>user3</p></strong><p class="col-10">fire!</p>
                   </div>
                   <p>5 MINUTES AGO</p>
               </div>
@@ -98,11 +98,17 @@
           </div>
         </div>
         <!-- right container -->
-        <div class="container w-25 border p-1 col">
+        <div class="container w-25 col">
           <!-- User profile and suggested profiles goes here -->
-          <figure class="m-0 p-0">
-            <img src="https://www.shareicon.net/data/256x256/2017/05/30/886556_user_512x512.png" class="img-fluid" style="width: 15%;">
-          </figure>
+          <div class="row">
+            <figure class="ml-0 p-0 col-2">
+              <img src="https://www.shareicon.net/data/256x256/2017/05/30/886556_user_512x512.png" class="img-fluid" style="width: 100%;">
+            </figure>
+            <h6 class="mr-0 p-0 col">user_profile</h6>
+          </div>
+          <div class="row">
+            
+          </div>
         </div>
       </div>
     </div>
